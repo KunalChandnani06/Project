@@ -52,3 +52,92 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kunal S Chandnani Portfolio</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #a855f7;
+      border-radius: 4px;
+    }
+    /* Smooth transitions */
+    button, a {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    button:hover, a:hover {
+      background-color: #a855f7;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-purple-100 via-pink-100 to-yellow-100 min-h-screen text-gray-800 font-sans">
+  <header class="bg-purple-600 text-white sticky top-0 shadow-md z-10">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="#hero" class="hover:text-yellow-300">Home</a></li>
+        <li><button id="about-btn" class="hover:text-yellow-300 focus:outline-none">About</button></li>
+        <li><button id="projects-btn" class="hover:text-yellow-300 focus:outline-none">Projects</button></li>
+        <li><button id="contact-btn" class="hover:text-yellow-300 focus:outline-none">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section id="hero" class="text-center py-20">
+      <h1 class="text-5xl font-bold mb-4">Kunal S Chandnani</h1>
+      <p class="text-xl text-gray-700">Aspiring AIML Engineer passionate about turning data into actionable insights.</p>
+    </section>
+
+    <section id="about" class="hidden max-w-3xl mx-auto p-6 rounded-lg shadow-lg bg-white">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I am Kunal S Chandnani, currently pursuing B.Tech in Artificial Intelligence and Machine Learning (AIML).
+        I am passionate about developing intelligent systems and leveraging machine learning to solve real-world problems.
+        Skilled in Python, TensorFlow, PyTorch, NLP, computer vision, data analysis, and deep learning techniques.
+      </p>
+    </section>
+
+    <section id="projects" class="hidden max-w-5xl mx-auto p-6 rounded-lg shadow-lg bg-white mt-10">
+      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 border rounded hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Smart Chatbot</h3>
+          <p>Developed an AI-powered chatbot using NLP to handle customer queries with 90% accuracy.</p>
+        </div>
+        <div class="p-4 border rounded hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Image Classifier</h3>
+          <p>Built a convolutional neural network to classify images with over 95% accuracy on test data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="hidden max-w-md mx-auto p-6 rounded-lg shadow-lg bg-white mt-10">
+      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+      <form class="space-y-4">
+        <label class="block text-gray-700" for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name" class="w-full p-2 border border-gray-300 rounded" />
+        <label class="block text-gray-700" for="email">Email</label>
+        <input type="email" id="email" placeholder="your.email@example.com" class="w-full p-2 border border-gray-300 rounded" />
+        <label class="block text-gray-700" for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Your message here" class="w-full p-2 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-700">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-600 p-4 mt-10">
+    <p>© 2025 Kunal S Chandnani. All rights reserved.</p>
+  </footer>
+</body>
+</html>
